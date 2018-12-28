@@ -10,6 +10,8 @@ services:
     restart: always
     ports:
       - "$PORT"
+    volumes:
+      - /disk2/mesquillanet:/var/local/mesquillanet
     env_file: .env
     environment:
       - VIRTUAL_HOST=mesquilla.net,www.mesquilla.net,mesquillanet-local.net

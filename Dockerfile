@@ -24,6 +24,8 @@ USER node
 
 ENV PORT $PORT
 
+VOLUME /var/local/mesquillanet
+
 EXPOSE $PORT
 
 CMD [ "npm", "start" ]
